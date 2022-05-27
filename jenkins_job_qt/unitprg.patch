@@ -1,0 +1,46 @@
+66c66
+<         QTestEventLoop::instance().enterLoop(secs);
+---
+>         QTestEventLoop::instance().enterLoop(2 * secs);
+130c130
+<     /* server 2 */
+---
+>     /* serve 2 */
+306c306
+< QString tst_QSslWolfSSL::EXAMPLE_SERVER = "192.168.11.49";
+---
+> QString tst_QSslWolfSSL::EXAMPLE_SERVER = "192.168.11.15";
+343,345c343,345
+<     skip_connectToHostEncrypted             = false;
+<     skip_localCertificate                   = false;
+<     skip_sessionCipher                      = false;
+---
+>     skip_connectToHostEncrypted             = true;
+>     skip_localCertificate                   = true;
+>     skip_sessionCipher                      = true;
+354c354
+<     skip_setSslConfiguration                = false;
+---
+>     skip_setSslConfiguration                = true;
+368c368
+<     skip_verifyMode                         = false;
+---
+>     skip_verifyMode                         = true;
+373,374c373,374
+<     skip_ignoreSslErrorsList                = false;
+<     skip_resetProxy                         = false;
+---
+>     skip_ignoreSslErrorsList                = true;
+>     skip_resetProxy                         = true;
+381c381
+<     skip_resume                             = false;
+---
+>     skip_resume                             = true;
+386c386
+<     skip_disconnectFromHostWhenConnected    = false;
+---
+>     skip_disconnectFromHostWhenConnected    = true;
+416c416
+<         qDebug() << "subjectAlternativeNames " << subjectAlternativeNames;
+---
+>         //qDebug() << "subjectAlternativeNames " << subjectAlternativeNames;
