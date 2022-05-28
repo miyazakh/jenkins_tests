@@ -109,10 +109,6 @@ GetPatch_Test () {
 
     # apply patch for unit test program to be ran as jenkins job
     patch ./$QT_WOLF_UNIT_TEST_PRG $QT_WOLF_UNIT_TEST_PRG_PATCH
-
-    cd "$HOME"
-
-
 }
 ################################################################################
 ## User Setup
@@ -352,8 +348,11 @@ run_test_opnessl () {
 # main 
 ###############################################################################
 #User_Setup
+cd "$HOME"
+
 echo "Get patch file from" "${PATCH_WGETPATH}"
 GetPatch_Test
+cd "$HOME"
 
 echo "Build SSL library"
 build_SSLLib
