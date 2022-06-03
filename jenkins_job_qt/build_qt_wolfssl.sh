@@ -231,7 +231,8 @@ build_SSLLib () {
 build_Qt () {
  cd "$HOME"
  if [ ! -d "qt5" ]; then
-     git clone git://code.qt.io/qt/qt5.git
+#    git clone git://code.qt.io/qt/qt5.git
+     git clone https://github.com/qt/qt5.git
  else
      cd "$HOME"/qt5/qtbase
 #     git restore .
