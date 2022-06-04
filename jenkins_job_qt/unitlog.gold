@@ -1,5 +1,6 @@
 Totals: 51 passed, 0 failed, 0 skipped, 0 blacklisted
 Totals: 22 passed, 0 failed, 0 skipped, 0 blacklisted
+Totals: 109 passed, 0 failed, 24 skipped, 0 blacklisted
 FAIL!  : tst_QSslCertificate::verify() '(errors.count() == 0)' returned FALSE. (errors: [ "The issuer certificate of a locally looked up certificate could not be found", "The certificate has expired" ])
 Totals: 184 passed, 1 failed, 1 skipped, 0 blacklisted
 Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted
@@ -7,4 +8,3 @@ Totals: 9 passed, 0 failed, 0 skipped, 0 blacklisted
 Totals: 38 passed, 0 failed, 0 skipped, 0 blacklisted
 Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted
 Totals: 823 passed, 0 failed, 397 skipped, 0 blacklisted
-Totals: 108 passed, 0 failed, 25 skipped, 0 blacklisted

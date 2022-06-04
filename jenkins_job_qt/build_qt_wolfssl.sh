@@ -266,7 +266,7 @@ build_Qt () {
      fi
      cp -r "$PATCH_DIR"/qssl_wolf "$HOME"/qt5/qtbase/tests/auto/network/ssl
      
-     cp "$HOME"/qt5/qtbase/tests/auto/network/ssl/qsslsocket/certs/* "$HOME"/qt5/qtbase/tests/auto/network/ssl/qssl_wolf/certs/* 
+     cp "$HOME"/qt5/qtbase/tests/auto/network/ssl/qsslsocket/certs/* "$HOME"/qt5/qtbase/tests/auto/network/ssl/qssl_wolf/certs/ 
      
  fi
  
